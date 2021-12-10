@@ -12,7 +12,7 @@ object RetrofitClient {
             .setLenient()
             .create()
         var retrofit = Retrofit.Builder()
-            .baseUrl("http://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/")
+            .baseUrl("http://www.kobis.or.kr/kobisopenapi/webservice/rest/")
             .addConverterFactory(GsonConverterFactory.create(gson))
             .build()
         api = retrofit.create(RetrofitInterface::class.java)

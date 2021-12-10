@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="홈"
+        android:id="@+id/home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:enabled="true"/>
+
+    <item
+        android:title="영화"
+        android:id="@+id/movie"
+        android:icon="@drawable/ic_baseline_movie_24"
+        android:enabled="true"/>
+
+    <item
+        android:title="배우"
+        android:id="@+id/actor"
+        android:icon="@drawable/ic_baseline_recent_actors_24"
+        android:enabled="true"/>
+
+</menu>

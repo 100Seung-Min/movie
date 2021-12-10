@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="70dp"
+    android:id="@+id/movie_item_layout"
+    android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:weightSum="7">
+    android:weightSum="7"
+    android:layout_marginTop="20dp">
 
     <TextView
         android:id="@+id/rank_txt"
@@ -18,7 +20,7 @@
         android:layout_weight="6"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:textSize="27sp"
+        android:textSize="20sp"
         android:gravity="center"
         android:text="영화이름"/>
 

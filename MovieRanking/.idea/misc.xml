@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/user/Documents/GitHub/movie/MovieRanking/app/src/main/res/layout/activity_detail_movie.xml" value="0.18125" />
+        <entry key="..\:/Users/user/Documents/GitHub/movie/MovieRanking/app/src/main/res/layout/activity_main.xml" value="0.2140625" />
+        <entry key="..\:/Users/user/Documents/GitHub/movie/MovieRanking/app/src/main/res/layout/fragment_movie_ranking.xml" value="0.2140625" />
+        <entry key="..\:/Users/user/Documents/GitHub/movie/MovieRanking/app/src/main/res/layout/movie_rank_item.xml" value="0.2140625" />
+        <entry key="..\:/Users/user/Documents/GitHub/movie/MovieRanking/app/src/main/res/menu/movie_bottom_navigation_menu.xml" value="0.165625" />
         <entry key="..\:/Users/user/MovieRanking/app/src/main/res/layout/activity_main.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/user/MovieRanking/app/src/main/res/layout/movie_rank_item.xml" value="0.176" />
         <entry key="..\:/Users/user/MovieRanking/app/src/main/res/layout/movie_renk_item.xml" value="0.25364583333333335" />

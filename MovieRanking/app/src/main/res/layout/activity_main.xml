@@ -4,12 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/black">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/movie_recyclerview"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+   <FrameLayout
+       android:id="@+id/frame_layout"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_marginBottom="50dp"/>
 
+   <com.google.android.material.bottomnavigation.BottomNavigationView
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       app:layout_constraintBottom_toBottomOf="parent"
+       android:background="#FF0000"
+      app:menu="@menu/movie_bottom_navigation_menu"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

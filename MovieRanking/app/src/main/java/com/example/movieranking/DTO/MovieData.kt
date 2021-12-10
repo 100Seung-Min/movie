@@ -12,5 +12,6 @@ data class dailyBoxOfficeList(
     val rank: String,
     val movieNm: String,
     val salesAcc: String,
-    val audiAcc: String
+    val audiAcc: String,
+    val movieCd: String
 )
