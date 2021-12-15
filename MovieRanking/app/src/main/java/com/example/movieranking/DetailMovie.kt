@@ -17,17 +17,17 @@ class DetailMovie : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
         val movieCd = intent.getStringExtra("movieCd")
-        RetrofitClient.api.detailMove(movieCd = movieCd!!).enqueue(object : Callback<DetailMovieData>{
-            override fun onResponse(
-                call: Call<DetailMovieData>,
-                response: Response<DetailMovieData>
-            ) {
-                println("여기 ${response.body()}")
-            }
-
-            override fun onFailure(call: Call<DetailMovieData>, t: Throwable) {
-                println("여기 ${t}")
-            }
-        })
+//        RetrofitClient.api.detailMove(movieCd = movieCd!!).enqueue(object : Callback<DetailMovieData>{
+//            override fun onResponse(
+//                call: Call<DetailMovieData>,
+//                response: Response<DetailMovieData>
+//            ) {
+//                println("여기 ${response.body()}")
+//            }
+//
+//            override fun onFailure(call: Call<DetailMovieData>, t: Throwable) {
+//                println("여기 ${t}")
+//            }
+//        })
     }
 }

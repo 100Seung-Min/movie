@@ -31,18 +31,18 @@ class MovieRanking : Fragment() {
         binding.movieRecyclerview.adapter = adapter
         binding.movieRecyclerview.layoutManager = LinearLayoutManager(context)
 
-        RetrofitClient.api.movieData().enqueue(object : Callback<MovieData> {
-            override fun onResponse(call: Call<MovieData>, response: Response<MovieData>) {
-                for(data in response.body()!!.boxOfficeResult.dailyBoxOfficeList){
-                    itemlist.add(data)
-                }
-                adapter.notifyDataSetChanged()
-            }
-
-            override fun onFailure(call: Call<MovieData>, t: Throwable) {
-                println("여기 에러${t}")
-            }
-        })
+//        RetrofitClient.api.movieData().enqueue(object : Callback<MovieData> {
+//            override fun onResponse(call: Call<MovieData>, response: Response<MovieData>) {
+//                for(data in response.body()!!.boxOfficeResult.dailyBoxOfficeList){
+//                    itemlist.add(data)
+//                }
+//                adapter.notifyDataSetChanged()
+//            }
+//
+//            override fun onFailure(call: Call<MovieData>, t: Throwable) {
+//                println("여기 에러${t}")
+//            }
+//        })
         return binding.root
     }
 }

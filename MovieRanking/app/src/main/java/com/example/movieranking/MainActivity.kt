@@ -10,6 +10,7 @@ import com.example.movieranking.Fragment.MovieRanking
 import com.example.movieranking.adapter.MoviewRecyclerAdapter
 import com.example.movieranking.databinding.ActivityMainBinding
 import com.example.movieranking.retrofit.RetrofitClient
+import okhttp3.ResponseBody
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -22,5 +23,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
         supportFragmentManager.beginTransaction().add(R.id.frame_layout, MovieRanking()).commit()
+        RetrofitClient.api.getRecentMovie().enqueue(object : Callback<ResponseBody>{
+            override fun onResponse(call: Call<ResponseBody>, response: Response<ResponseBody>) {
+                println("여기 ${response}")
+            }
+
+            override fun onFailure(call: Call<ResponseBody>, t: Throwable) {
+                println("여기 ${t}")
+            }
+
+        })
     }
 }
